@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <style type="text/css">
+        .content {
+            text-align: center;
+            margin-top: 10%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gameContext" style=" float:left; display: none;"></div>
+    <div id="content" class="content">
+        <button type="submit" id="button" name="submit" class="btn btn-info">
+        Start
+      </button>
+        <h4>Start game play</h4>
+        <input placeholder="Please write name " style="width: 40%;margin-left: 30%;" class=" form-control " type="text " id="name" />
+    </div>
+    <div style="float: right ;width: 30%;height: 25%;text-align: center;display: none;margin-top: 100px; " id="Mscore">
+        <h3 style="color:#17a2b8 ; ">
+            Score :
+            <label id="score">0</label
+        ><label style="color : red ; " id="rewardPoint"></label>
+        </h3>
+
+        <h2 style="color : red ; ">
+            <strong>Map <label id="map">1</label></strong>
+        </h2>
+        <h2 style="color : red ; " id="titleName">
+            <strong>Player : <label id="player"></label></strong>
+        </h2>
+        <h1 style="color : #17a2b8 ; " for=" " id="notify"></h1>
+    </div>
+
+    <script src="getElement.js "></script>
+    <script src="food.js "></script>
+    <script src="foods.js "></script>
+    <script src="dot.js "></script>
+    <script src="snake.js "></script>
+    <script src="game.js "></script>
+</body>
+
+</html>
